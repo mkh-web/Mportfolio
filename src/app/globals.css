@@ -7,7 +7,7 @@
 
 body {
     padding: 0px;
-    margin: 0px 70px;
+    margin: 0px 0px;
     box-sizing: border-box;
     background-color: #111;
     color: white;
@@ -33,7 +33,30 @@ input {
 /*اساسيات - basics*/
 
 
+/*شريط التمرير - scroll bar*/
 
+/* width */
+::-webkit-scrollbar {
+width: 1px;
+height: 1px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+background: #f1f1f100;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+background: #161616;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+background: #171717;
+  }
+  
+/*شريط التمرير - scroll bar*/
 
 
 @layer utilities {
@@ -41,8 +64,9 @@ input {
         @apply mx-auto max-w-[1440px];
     }
 
-    .padding-container {
-        @apply px-6 lg:px-20 3xl:px-0;
+    .faddingheader{
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.742734593837535) 25%, rgba(0,0,0,0.5074404761904762) 50%, rgba(0,0,0,0.2049194677871149) 75%, rgba(0,0,0,0) 100%);
     }
 
     .flexCenter {

@@ -14,6 +14,6 @@ export const NavbarList = {
         { title: "Home", icon: <IoIosHome />, pathname: "/" },
         { title: "Certificate", icon: <GrCertificate /> , pathname: "/Certificate" },
         { title: "Projects", icon: <FaProjectDiagram />, pathname: "/Projects" },
-        { title: "Contact", icon: <MdContactMail />, pathname: "/#Contact" },
+        { title: "Contact", icon: <MdContactMail />, pathname: "/Contact" },
     ]
 }
