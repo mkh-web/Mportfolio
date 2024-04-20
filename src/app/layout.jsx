@@ -1,4 +1,5 @@
 import { Noto_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css";
 
 //components
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body className={notoSans.className}>
         <NavBar/>
         {children}
+        <Analytics/>
       </body>
     </html>
   );
