@@ -1,16 +1,10 @@
-import { Montserrat,Tajawal } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({ 
+const notoSans = Noto_Sans({
   subsets: ["latin"],
-  weight:'400',
-  display: 'swap',
-});
-
-const tajawal = Tajawal({
-  subsets: ["arabic"],
   weight: '400',
-  display: 'swap'
+  display: 'swap'//By default 
 });
 
 
@@ -20,13 +14,13 @@ export const metadata = {
     default: " MK protoflio || موقع تعريفي عني",//هذا عاد حق الصفحة الرئيسية
     template: "%s | MK"//هذا الجزء مخصص انه يطلع في كل مكان بس بمساعدة ال اس راح يتحسن عملية بحث الناس عن الموقع
   },
-  description: "",
+  description: "My combined education in MIS and passion for development empower me to build web applications with a strong foundation in data-driven decision making",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}`}>
+      <body className={notoSans.className}>
         {children}
       </body>
     </html>
