@@ -5,11 +5,12 @@
 
 /*اساسيات - basics*/
 
-* {
+body {
     padding: 0px;
-    margin: 20px;
+    margin: 0px 70px;
     box-sizing: border-box;
-    background-color: #171717;
+    background-color: #111;
+    color: white;
 }
 
 li {
