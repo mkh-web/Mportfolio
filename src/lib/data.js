@@ -12,7 +12,7 @@ export const NavbarList = {
     icon_close:<GrClose />,
     list:[
         { title: "Home", icon: <IoIosHome />, pathname: "/" },
-        { title: "certificate", icon: <GrCertificate /> , pathname: "/certificate" },
+        { title: "Certificate", icon: <GrCertificate /> , pathname: "/Certificate" },
         { title: "Projects", icon: <FaProjectDiagram />, pathname: "/Projects" },
         { title: "Contact", icon: <MdContactMail />, pathname: "/#Contact" },
     ]
