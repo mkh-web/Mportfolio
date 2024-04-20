@@ -33,7 +33,7 @@ export default function SmallMenu() {
                     animate={{x: 0 }}
                     transition={{ duration: 0.2 }}
                     
-                    className="flex items-center gap-10 flex-col absolute top-0 right-0 pt-7 h-full w-36 bg-[#171717]">
+                    className="flex items-center gap-10 flex-col fixed top-0 right-0 pt-7 h-full w-36 bg-[#171717]">
                         <button className="flexCenter flex-row gap-2"
                             onClick={() => setMenu((prev) => !prev)}>
                             {NavbarList.title}
