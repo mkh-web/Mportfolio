@@ -44,15 +44,15 @@ export default function SmallMenu() {
 
                         {NavbarList.list.map((links) => (
                             <Link href={links.pathname} key={links.title} className={`${pathname === links.pathname && "bg-white text-[#171717] rounded-lg !opacity-100"}
-                            flex justify-between items-center w-full  px-2 flex-row`}>
+                            flex justify-between items-center w-full p-5 flex-row`}>
                                 {links.title}
                                 {links.icon}
                             </Link>
                         ))}
 
 
-                        <div className="flex justify-between items-center w-full px-2">
-                            <button className="flex justify-between items-center w-full" onMouseEnter={() => setShow((state) => !state)}>
+                        <div className="flex justify-between items-center w-full p-5 ">
+                            <button className="flex justify-between items-center w-full" onClick={() => setShow((state) => !state)}>
                                 {DropDown.title}
                                 {show ? (<motion.div
                                     transition={{
@@ -70,13 +70,10 @@ export default function SmallMenu() {
 
                         {show &&
                             <motion.div
-                                transition={{
-                                    ease: "linear",
-                                    duration: 0.2,
-                                }}
+                                transition={{ duration: 0.2 }}
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
-                                className="flex justify-between items-center w-full gap-3 p-2  bg-[#0e0e0e] rounded-lg flex-col">
+                                className="flex justify-between items-center w-full gap-3 p-5  bg-[#0e0e0e] rounded-lg flex-col">
                                 {DropDown.list.map((drop) => (
                                     <Link href={drop.pathname} key={drop.title} className="flex items-center justify-between w-full h-full gap-2 rounded-lg">
                                         {drop.title}
