@@ -1,11 +1,12 @@
 import { GrCertificate } from "react-icons/gr";
-import { FaProjectDiagram, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaProjectDiagram, FaInstagram, FaGithub, FaLinkedin, FaHtml5, FaCss3, FaBootstrap, FaPhp, FaReact, FaNodeJs } from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
-import { IoIosHome, IoIosArrowUp } from "react-icons/io";
+import { IoIosHome, IoIosArrowUp, IoLogoJavascript } from "react-icons/io";
 import { TbMenu } from "react-icons/tb";
 import { GrClose } from "react-icons/gr";
 import { FaRegFileCode, FaXTwitter } from "react-icons/fa6";
 import { CgWebsite } from "react-icons/cg";
+import { SiTailwindcss, SiNextdotjs, SiMysql, SiMongodb, SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
 
 
 export const NavbarList = {
@@ -30,12 +31,28 @@ export const DropDown = {
 }
 
 export const SocialMedia = [
-        { icon: <FaInstagram />, link: 'https://www.instagram.com/mkh.web' },
-        { icon: <FaXTwitter />, link: 'https://twitter.com/mohnd_khalid' },
-        { icon: <FaGithub />, link: 'https://github.com/mkh-web' },
-        { icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/mohndkhalid' },
-    ]
+    { icon: <FaInstagram />, link: 'https://www.instagram.com/mkh.web' },
+    { icon: <FaXTwitter />, link: 'https://twitter.com/mohnd_khalid' },
+    { icon: <FaGithub />, link: 'https://github.com/mkh-web' },
+    { icon: <FaLinkedin />, link: 'https://www.linkedin.com/in/mohndkhalid' },
+]
 
+
+export const techStack = [
+    { icon: <FaHtml5 />, color: 'FF6868' },
+    { icon: <FaCss3 />, color: '98E4FF' },
+    { icon: <IoLogoJavascript />, color: 'FAEF5D' },
+    { icon: <SiTailwindcss />, color: 'B6FFFA' },
+    { icon: <FaBootstrap />, color: 'E26EE5' },
+    { icon: <FaReact />, color: 'ACFADF' },
+    { icon: <SiNextdotjs />, color: '#000' },
+    { icon: <FaNodeJs />, color: '82CD47' },
+    { icon: <SiMysql />, color: '2192FF' },
+    { icon: <SiMongodb />, color: '379237' },
+    { icon: <SiAdobephotoshop />, color: '293462' },
+    { icon: <SiAdobeillustrator />, color: 'FF5403' },
+    { icon: <FaPhp />, color: '7C83FD' },
+]
 
 
 
