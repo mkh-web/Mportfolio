@@ -78,7 +78,7 @@ export default function SmallMenu() {
                                 animate={{ opacity: 1 }}
                                 className="flex justify-between items-center w-full gap-3 p-2  bg-[#0e0e0e] rounded-lg flex-col">
                                 {DropDown.list.map((drop) => (
-                                    <Link href={drop.pathname} className="flex items-center justify-between w-full h-full gap-2 rounded-lg">
+                                    <Link href={drop.pathname} key={drop.title} className="flex items-center justify-between w-full h-full gap-2 rounded-lg">
                                         {drop.title}
                                         {drop.icon}
                                     </Link>
