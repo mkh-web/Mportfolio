@@ -2,7 +2,6 @@ import SmallMenu from "./(ListMenu)/smallList";
 import NormallList from "./(ListMenu)/normalList.";
 import MynameAsComponent from "./(ListMenu)/myname";
 
-
 export default function NavBar() {
 
    
@@ -12,7 +11,6 @@ export default function NavBar() {
             <MynameAsComponent/>
             <NormallList/>    
             <SmallMenu />
-            
         </div>
     );
 }

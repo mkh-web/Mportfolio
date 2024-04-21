@@ -12,7 +12,7 @@ const tajawal = Tajawal({
 export default function MynameAsComponent() {
     return (
         <>
-            <h1 className={` text-3xl hover:opacity-85 transition cursor-default ${tajawal.className}`}>
+            <h1 className={` text-3xl hover:opacity-85 w-60 transition cursor-default ${tajawal.className}`}>
                 <Typewriter
                     words={['mkh_web', 'مهند خالد حبيشان', 'Mohanad Khalid', 'カタカナ']}
                     loop={true}
