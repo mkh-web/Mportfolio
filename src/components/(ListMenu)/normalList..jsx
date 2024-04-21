@@ -63,7 +63,7 @@ export default function NormallList() {
                         animate={{ opacity: 1 }}
                         className="bg-white text-black rounded-lg absolute right-5 top-16">
                         {DropDown.list.map((drop) => (
-                            <button className="flex flex-col gap-3" >
+                            <button key={drop.title} className="flex flex-col gap-3" >
                                 <Link href={drop.pathname} key={drop.title} className="flex items-center gap-2 p-2 hover:bg-[#eeeeee] rounded-lg">
                                     {drop.icon}
                                     {drop.title}
