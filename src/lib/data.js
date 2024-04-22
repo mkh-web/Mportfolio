@@ -47,11 +47,11 @@ export const techStack = [
     { icon: <FaReact />, color: 'ACFADF' },
     { icon: <SiNextdotjs />, color: '#000' },
     { icon: <FaNodeJs />, color: '82CD47' },
+    { icon: <FaPhp />, color: '7C83FD' },
     { icon: <SiMysql />, color: '2192FF' },
     { icon: <SiMongodb />, color: '379237' },
     { icon: <SiAdobephotoshop />, color: '293462' },
     { icon: <SiAdobeillustrator />, color: 'FF5403' },
-    { icon: <FaPhp />, color: '7C83FD' },
 ]
 
 

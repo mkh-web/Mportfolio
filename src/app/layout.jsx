@@ -3,8 +3,14 @@ import { Analytics } from "@vercel/analytics/react"
 
 import "./globals.css";
 
+
+//curser
+
+import FlareCursor from "@/components/FlareCusror"; // Don't forget to update this path to your own component file.
+
 //components
 import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const notoSans = Noto_Sans({
   subsets: ["latin"],
@@ -26,9 +32,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={notoSans.className}>
-        <NavBar/>
+        <NavBar />
+        <FlareCursor />
         {children}
-        <Analytics/>
+        <Analytics />
+        <Footer />
       </body>
     </html>
   );
