@@ -22,7 +22,7 @@ const notoSans = Noto_Sans({
 
 export const metadata = {
   title: {
-    default: " MK protoflio || موقع تعريفي عني",//هذا عاد حق الصفحة الرئيسية
+    default: " MK protoflio || موقع تعريفي ",//هذا عاد حق الصفحة الرئيسية
     template: "%s | MK"//هذا الجزء مخصص انه يطلع في كل مكان بس بمساعدة ال اس راح يتحسن عملية بحث الناس عن الموقع
   },
   description: "My combined education in MIS and passion for development empower me to build web applications with a strong foundation in data-driven decision making",

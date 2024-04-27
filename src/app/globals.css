@@ -4,6 +4,10 @@
 
 
 /*اساسيات - basics*/
+* {
+    scroll-snap-type: mandatory y;
+    scroll-behavior: smooth;
+}
 
 body {
     padding: 0px;
@@ -11,9 +15,10 @@ body {
     box-sizing: border-box;
     background-color: #111;
     color: white;
-    cursor: none !important; /* Let's hide the default cursor so it looks way better */
-
+    cursor: none !important;
+    /* Let's hide the default cursor so it looks way better */
 }
+
 li {
     list-style: none;
 }
@@ -28,6 +33,10 @@ button {
 
 input {
     outline: none;
+}
+
+.s1 {
+    scroll-snap-align: center;
 }
 
 /*اساسيات - basics*/
@@ -63,36 +72,38 @@ input {
     .max-container {
         @apply mx-auto max-w-[1440px];
     }
-    
-    .faddingheader{
-        background: rgb(0,0,0);
-        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.742734593837535) 25%, rgba(0,0,0,0.5074404761904762) 50%, rgba(0,0,0,0.2049194677871149) 75%, rgba(0,0,0,0) 100%);
+
+    .faddingheader {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.742734593837535) 25%, rgba(0, 0, 0, 0.5074404761904762) 50%, rgba(0, 0, 0, 0.2049194677871149) 75%, rgba(0, 0, 0, 0) 100%);
     }
-    
+
     .flexCenter {
         @apply flex items-center justify-center;
     }
-    
+
     .flexBetween {
         @apply flex items-center justify-between;
     }
-    
+
     .flexStart {
         @apply flex items-center justify-start;
     }
-    
+
     .flexEnd {
         @apply flex items-center justify-end;
     }
 }
+
 /*ميدا لمقاسات الاجهزة - media query*/
 
 
 @media (max-width:640px) {
-.container{
-width: 475px;
+    .container {
+        width: 475px;
+    }
 }
-}
+
 /*ميدا لمقاسات الاجهزة - media query*/
 
 
@@ -104,23 +115,25 @@ width: 475px;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    z-index: 999999 !important ;
+    z-index: 999999 !important;
     backdrop-filter: blur(1px);
     background-color: #00000059;
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-    cursor: none !important; /* Let's hide the default cursor so it looks way better */
-  }
-  
-  /* We need to remove this custom cursor in mobile devices */
-  @media screen and (max-width: 768px) {
+    cursor: none !important;
+    /* Let's hide the default cursor so it looks way better */
+}
+
+/* We need to remove this custom cursor in mobile devices */
+@media screen and (max-width: 768px) {
     .flare {
-      width: 0;
-      height: 0;
-      transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
-        opacity 0.2s ease-in-out;
+        width: 0;
+        height: 0;
+        transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+            opacity 0.2s ease-in-out;
     }
-  }
-  .flare.pointer {
+}
+
+.flare.pointer {
     opacity: 0 !important;
     transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  }
+}

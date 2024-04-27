@@ -1,5 +1,5 @@
 import { GrCertificate } from "react-icons/gr";
-import { FaProjectDiagram, FaInstagram, FaGithub, FaLinkedin, FaHtml5, FaCss3, FaBootstrap, FaPhp, FaReact, FaNodeJs } from "react-icons/fa";
+import { FaProjectDiagram, FaInstagram, FaGithub, FaLinkedin, FaHtml5, FaCss3, FaBootstrap, FaPhp, FaReact, FaNodeJs,FaFigma  } from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
 import { IoIosHome, IoIosArrowUp, IoLogoJavascript } from "react-icons/io";
 import { TbMenu } from "react-icons/tb";
@@ -15,8 +15,8 @@ export const NavbarList = {
     icon_close: <GrClose />,
     list: [
         { title: "Home", icon: <IoIosHome />, pathname: "/" },
-        { title: "Certificate", icon: <GrCertificate />, pathname: "/Certificate" },
-        { title: "Contact", icon: <MdContactMail />, pathname: "/Contact" },
+        { title: "Certificate", icon: <GrCertificate />, pathname: "/#Certificate" },
+        { title: "Contact", icon: <MdContactMail />, pathname: "/#Contact" },
     ]
 }
 export const DropDown = {
@@ -52,6 +52,7 @@ export const techStack = [
     { icon: <SiMongodb />, color: '379237' },
     { icon: <SiAdobephotoshop />, color: '293462' },
     { icon: <SiAdobeillustrator />, color: 'FF5403' },
+    { icon: <FaFigma  />, color: '35' },
 ]
 
 
