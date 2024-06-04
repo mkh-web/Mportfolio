@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 /*اساسيات - basics*/
 * {
     scroll-snap-type: mandatory y;
@@ -46,8 +47,8 @@ input {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 1px;
-    height: 1px;
+    width: 0px;
+    height: 0px;
 }
 
 /* Track */
@@ -95,16 +96,94 @@ input {
     }
 }
 
+
+/*for cards*/
+.cardhover {
+    animation: scrollleft 120s linear infinite;
+}
 /*ميدا لمقاسات الاجهزة - media query*/
-
-
-@media (max-width:640px) {
-    .container {
-        width: 475px;
+@keyframes scrollleft {
+    to {
+        left: -2200px;
     }
 }
 
-/*ميدا لمقاسات الاجهزة - media query*/
+
+
+.item1 {
+    animation-delay: calc(120s / 15 * (15 - 1) * -1);
+}
+
+.item2 {
+    animation-delay: calc(120s / 15 * (15 - 2) * -1);
+
+}
+
+.item3 {
+    animation-delay: calc(120s / 15 * (15 - 3) * -1);
+
+}
+
+.item4 {
+    animation-delay: calc(120s / 15 * (15 - 4) * -1);
+
+}
+
+.item5 {
+    animation-delay: calc(120s / 15 * (15 - 5) * -1);
+
+}
+
+.item6 {
+    animation-delay: calc(120s / 15 * (15 - 6) * -1);
+
+}
+
+.item7 {
+    animation-delay: calc(120s / 15 * (15 - 7) * -1);
+
+}
+
+.item8 {
+    animation-delay: calc(120s / 15 * (15 - 8) * -1);
+
+}
+
+.item9 {
+    animation-delay: calc(120s / 15 * (15 - 9) * -1);
+
+}
+
+.item10 {
+    animation-delay: calc(120s / 15 * (15 - 10) * -1);
+
+}
+
+.item11 {
+    animation-delay: calc(120s / 15 * (15 - 11) * -1);
+
+}
+
+.item12 {
+    animation-delay: calc(120s / 15 * (15 - 12) * -1);
+
+}
+
+.item13 {
+    animation-delay: calc(120s / 15 * (15 - 13) * -1);
+
+}
+
+.item14 {
+    animation-delay: calc(120s / 15 * (15 - 14) * -1);
+
+}
+
+.item15 {
+    animation-delay: calc(120s / 15 * (15 - 15) * -1);
+
+}
+
 
 
 

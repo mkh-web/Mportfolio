@@ -15,8 +15,8 @@ export const NavbarList = {
     icon_close: <GrClose />,
     list: [
         { title: "Home", icon: <IoIosHome />, pathname: "/" },
-        { title: "Certificate", icon: <GrCertificate />, pathname: "/#Certificate" },
-        { title: "Contact", icon: <MdContactMail />, pathname: "/#Contact" },
+        { title: "Certificate", icon: <GrCertificate />, pathname: "/Certificate" },
+        { title: "Contact", icon: <MdContactMail />, pathname: "/Contact" },
     ]
 }
 export const DropDown = {
@@ -39,20 +39,20 @@ export const SocialMedia = [
 
 
 export const techStack = [
-    { icon: <FaHtml5 />, color: 'FF6868' },
-    { icon: <FaCss3 />, color: '98E4FF' },
-    { icon: <IoLogoJavascript />, color: 'FAEF5D' },
-    { icon: <SiTailwindcss />, color: 'B6FFFA' },
-    { icon: <FaBootstrap />, color: 'E26EE5' },
-    { icon: <FaReact />, color: 'ACFADF' },
-    { icon: <SiNextdotjs />, color: '#000' },
-    { icon: <FaNodeJs />, color: '82CD47' },
-    { icon: <FaPhp />, color: '7C83FD' },
-    { icon: <SiMysql />, color: '2192FF' },
-    { icon: <SiMongodb />, color: '379237' },
-    { icon: <SiAdobephotoshop />, color: '293462' },
-    { icon: <SiAdobeillustrator />, color: 'FF5403' },
-    { icon: <FaFigma  />, color: '35' },
+    { icon: <FaHtml5 />, txt:'HTML' ,n:1 },
+    { icon: <FaCss3 />, txt:'CSS' ,n:2},
+    { icon: <IoLogoJavascript />, txt:'Javascript',n:3 },
+    { icon: <SiTailwindcss />, txt:'Tailwind css' ,n:4},
+    { icon: <FaBootstrap />, txt:'Bootstrap',n:5 },
+    { icon: <FaReact />, txt:'React',n: 6},
+    { icon: <SiNextdotjs />, txt: 'Next js' ,n:7},
+    { icon: <FaNodeJs />, txt:'Node js' ,n:8},
+    { icon: <FaPhp />, txt:'PHP',n: 9},
+    { icon: <SiMysql />, txt:'Mysql' ,n:10},
+    { icon: <SiMongodb />, txt:'Mongo DB',n:12 },
+    { icon: <SiAdobephotoshop />, txt:'Photo shop' ,n:13},
+    { icon: <SiAdobeillustrator />, txt:'Illustrator' ,n:14},
+    { icon: <FaFigma  />, txt: 'Figma',n:15 },
 ]
 
 

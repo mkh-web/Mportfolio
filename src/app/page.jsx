@@ -2,7 +2,6 @@
 import { SocialMedia, techStack } from '@/lib/data'
 import Link from 'next/link';
 import Image from 'next/image';
-import Carousel from '@/components/carousel';
 import ContactForm from '@/components/Contact';
 
 
@@ -22,35 +21,33 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='w-[70%] h-auto flex flex-col lg:flex-row gap-3 rounded-lg'>
+        <h1 className='text-[25px]'>Tech Stack</h1>
+      <div className=' h-auto overflow-auto flex items-start justify-center flex-col w-4/5 '>
 
-          <div className='lg:w-[60%]  bg-black flexCenter rounded-lg flex-col gap-4 py-3'>
-            <h1 className='text-[25px]'>Tech Stack</h1>
-
-            <div className=' border-blue-50 border p-5 rounded-lg transition-all flexCenter md:gap-5 gap-2 flex-wrap lg:w-[550px] w-full md:h-60'>
-              {techStack.map((data)=>(
-                <h1 className='text-5xl' key={data.color}>{data.icon}</h1>
-              ))}
+        <div className='flex flex-row h-60 relative w-[90%] group'>
+          {techStack.map((data) => (
+            <div className={`item${data.n} absolute left-[100%] bg-zinc-900 border border-zinc-950 lg:w-52 h-52 w-40 flexCenter flex-col gap-5 rounded-lg cardhover group-hover:opacity-50 transition hover:!opacity-100`} key={data.color}>
+              <h1 className='text-5xl'>
+                {data.icon}
+              </h1>
+              <h1 className='text-2xl'>
+                {data.txt}
+              </h1>
             </div>
+          ))}
+        </div>
 
-          </div>
 
-
-          <div className=' rounded-lg bg-white lg:w-[40%] w-full text-black overflow-hidden'>
-            <Carousel/>
-          </div>
       </div>
 
-      <div className=' flex justify-start flex-col bg-white text-black w-full h-[640px]' id='cert'>
-        <h1>شهايد!</h1>
-      </div>
+
 
 
       <div className='flex justify-start flex-col w-[70%] s1' id='Contact'>
-        <ContactForm/>
+        <ContactForm />
       </div>
 
-          
+
 
 
 
