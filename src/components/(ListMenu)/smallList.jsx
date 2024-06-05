@@ -19,7 +19,7 @@ export default function SmallMenu() {
 
     return (
         <>
-            <div className=" md:hidden flexCenter flex-col">
+            <div className=" md:hidden flexCenter flex-col ">
                 <button className="flexCenter flex-row gap-2 group-hover:opacity-50 transition hover:!opacity-100"
                     onClick={() => setMenu((prev) => !prev)}>
                     {NavbarList.title}

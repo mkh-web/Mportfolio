@@ -21,12 +21,13 @@ export default function Home() {
         </div>
       </div>
 
+
         <h1 className='text-[25px]'>Tech Stack</h1>
       <div className=' h-auto overflow-auto flex items-start justify-center flex-col w-4/5 '>
 
         <div className='flex flex-row h-60 relative w-[90%] group'>
           {techStack.map((data) => (
-            <div className={`item${data.n} absolute left-[100%] bg-zinc-900 border border-zinc-950 lg:w-52 h-52 w-40 flexCenter flex-col gap-5 rounded-lg cardhover group-hover:opacity-50 transition hover:!opacity-100`} key={data.color}>
+            <div className={`item${data.n} absolute z-0 left-[100%] bg-zinc-900 border border-zinc-950 lg:w-52 h-52 w-40 flexCenter flex-col gap-5 rounded-lg cardhover group-hover:opacity-50 transition hover:!opacity-100`} key={data.n}>
               <h1 className='text-5xl'>
                 {data.icon}
               </h1>
@@ -43,9 +44,7 @@ export default function Home() {
 
 
 
-      <div className='flex justify-start flex-col w-[70%] s1' id='Contact'>
-        <ContactForm />
-      </div>
+
 
 
 

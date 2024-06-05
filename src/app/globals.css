@@ -36,9 +36,6 @@ input {
     outline: none;
 }
 
-.s1 {
-    scroll-snap-align: center;
-}
 
 /*اساسيات - basics*/
 
@@ -209,6 +206,10 @@ input {
         height: 0;
         transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
             opacity 0.2s ease-in-out;
+    }
+    .cardhover {
+        z-index: -1;
+        opacity: 1 !important;
     }
 }
 
