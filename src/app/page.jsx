@@ -13,7 +13,11 @@ export default function Home() {
 
       <div className=" flexCenter flex-col gap-4 text-[#111] bg-[#ffffff] rounded-lg w-[70%] md:h-80 h-96 text-center">
         <h1 className=" capitalize text-3xl">hi there I&apos;M Mohanad</h1>
-        <h1 className=" w-[70%] ">My combined education in MIS and passion for development empower me to build web applications with a strong foundation in data-driven decision making</h1>
+        <h1 className=" w-[70%] ">
+          
+        A web developer that design a website to help business grow up and look informative,
+         I'm dedicated to creating appealing user interfaces that enhance the user experience.
+        </h1>
         <div className='md:flexBetween flexCenter text-3xl w-[25%]  '>
           {SocialMedia.map((data) => (
             <Link className='hover:opacity-50 shadow-lg  transition rounded-full p-2' href={data.link} key={data.icon}>{data.icon}</Link>
