@@ -15,7 +15,7 @@ export default function Home() {
         <h1 className=" w-[70%] ">
           
         A web developer that design a website to help business grow up and look informative,
-         I'm dedicated to creating appealing user interfaces that enhance the user experience.
+         I&apos;m dedicated to creating appealing user interfaces that enhance the user experience.
         </h1>
         <div className='md:flexBetween flexCenter text-3xl w-[25%]  '>
           {SocialMedia.map((data) => (
